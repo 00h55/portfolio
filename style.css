@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #0e0e10;
+    color: #e0e0e0;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  nav {
+    background-color: #1a1a1d;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  nav ul li a {
+    color: #e0e0e0;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    position: relative;
+  }
+
+  nav ul li a:hover {
+    color: #6dd5fa;
+  }
+
+  /* Highlight effect */
+  .highlight {
+    animation: flash 0.1s ease;
+  }
+
+  @keyframes flash {
+    0% {
+      background-color: #6dd5fa;
+      color: #0e0e10;
+    }
+    100% {
+      background-color: transparent;
+      color: #e0e0e0;
+    }
+  }
+
+  header {
+    padding: 2rem;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 3rem;
+    color: #ffffff;
+    letter-spacing: 3px;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #888;
+    margin-top: 0.5rem;
+  }
+
+  main {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  section {
+    margin-bottom: 2rem;
+  }
+
+  .section-title {
+    color: #61d1fa;
+    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
+    border-bottom: 1px solid #444;
+    padding-bottom: 0.3rem;
+  }
+
+  p {
+    color: #ccc;
+    margin-top: 0.5rem;
+  }
+
+  .product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .product img {
+    max-width: 300%;
+    width: 550px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  footer {
+    text-align: center;
+    padding: 1rem;
+    color: #555;
+    font-size: 0.9rem;
+    border-top: 1px solid #222;
+  }
+
+  a {
+    color: #bc4040;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #c584fd;
+    text-decoration: underline;
+    font-style: italic;
+  }
+  .KIB{
+    color: #ff00cc;
+    text-decoration: none;
+  }
+  .TKB{
+    color: #ff00cc;
+    text-decoration: none;
+  }
+  .ANH{
+    color: #ff00cc;
+    text-decoration: none;
+  }
+  .LVL{
+    color: #ff00cc;
+    text-decoration: none;
+  }
+

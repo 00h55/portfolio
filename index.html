@@ -1,117 +1,71 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <link rel="shortcut icon" href="image.png"image/x-icon">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Aelune — 00h55</title>
-  <style>
-    /* Global Reset */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #0e0e10;
-      color: #e0e0e0;
-      line-height: 1.6;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-
-    header {
-      padding: 2rem;
-      text-align: center;
-    }
-
-    h1 {
-      font-size: 3rem;
-      color: #ffffff;
-      letter-spacing: 3px;
-    }
-
-    h2 {
-      font-size: 1.2rem;
-      font-weight: 400;
-      color: #888;
-      margin-top: 0.5rem;
-    }
-
-    main {
-      padding: 2rem;
-      max-width: 800px;
-      margin: 0 auto;
-    }
-
-    section {
-      margin-bottom: 2rem;
-    }
-
-    .section-title {
-      color: #6dd5fa;
-      margin-bottom: 0.5rem;
-      font-size: 1.4rem;
-      border-bottom: 1px solid #444;
-      padding-bottom: 0.3rem;
-    }
-
-    p {
-      color: #ccc;
-      margin-top: 0.5rem;
-    }
-
-    footer {
-      text-align: center;
-      padding: 1rem;
-      color: #555;
-      font-size: 0.9rem;
-      border-top: 1px solid #222;
-    }
-
-    a {
-      color: #6dd5fa;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
+  <link rel="shortcut icon" href="image.png" type="image/x-icon" /> 
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <nav>
+    <ul>
+      <li><a href="#about">À propos</a></li>
+      <li><a href="#projects">Projets</a></li>
+      <li><a href="#shop">Boutique</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#support">Support</a></li>
+    </ul>
+  </nav>
+
   <header>
     <h1>Aelune</h1>
-    <h2>aka 00h55</h2>
+    <h2>alias 00h55</h2>
   </header>
 
   <main>
-    <section>
+    <section id="about">
       <div class="section-title">À propos</div>
-      <p>Je suis Aelune, aussi connu sous le nom de 00h55. Passionné par la création numérique, le développement web et l'univers artistique nocturne. Mon style est minimaliste, sombre et rempli de sens cachés.</p>
+      <p>Je suis Aelune, également connu sous le nom de 00h55. Passionné par la création numérique, le développement web et l'univers artistique nocturne. Mon style est minimaliste, sombre et empreint de sens cachés.</p>
     </section>
 
-    <section>
+    <section id="projects">
       <div class="section-title">Projets</div>
       <p>
-         • <strong>Kiyomi Bot</strong> — Bot Discord multifonctions prive<br>
-         • <strong>2KBOT </strong> — Bot discord multifonctions prive<br>
-         • <strong>Leveling</strong> — Un bot Discord a accès sur le système de Level <a href="https://discord.com/oauth2/authorize?client_id=1369636711256166420">Installation</a><br>
+        • <strong class="KIB">Kiyomi Bot</strong> — Bot Discord multifonction privé <a href="https://discord.gg/kYUfE9scKA">Coconut 🥥</a><br />
+        • <strong class="TKB">2KBOT</strong> — Bot Discord multifonction privé <a href="https://discord.gg/XUcgqA4ZFz">2K Server</a><br/>
+        • <strong class="ANH">Ame no Hana</strong> — Bot Discord multifonction privé<br/>
+        • <strong class="LVL">Leveling</strong> — Bot Discord centré sur le système de niveau <a href="https://discord.com/oauth2/authorize?client_id=1369636711256166420">Installation</a>
       </p>
     </section>
 
-    <section>
+    <section id="shop">
+      <div class="section-title">Boutique</div>
+      <div class="product">
+        <img src="carte.png" alt="Carte de commande" />
+        <p><strong>Pour toute commande, passe par le lien Google Forme en-dessous !</strong><br />
+          <a href="https://forms.gle/V9HJbu9CbkdjY1UEA">Lien Google Forme</a>
+        </p>
+      </div>
+    </section>
+
+    
+
+    <section id="support">
+      <div class="section-title">Support</div>
+      <!-- <p>Si tu souhaites soutenir mon travail, tu peux le faire via <a href="https://ko-fi.com/aelune">Ko-fi</a>. Chaque contribution m'aide à continuer mes projets et à créer du contenu de qualité.</p> -->
+      
+      <p>Pour le support développement <a href="https://discord.gg/4ER8kTEGqD">00h55 - Support</a></p>
+    </section>
+
+    <section id="contact">
       <div class="section-title">Contact</div>
-      <p>Tu peux me contacter via <a href="mailto:aelunea.dev@gmail.com">aelunea.dev@gmail.com</a> ou me retrouver sur Discord : <strong>aelunea_</strong></p>
+      <p>Tu peux me contacter par mail à <a href="mailto:aelunea.dev@gmail.com">aelunea.dev@gmail.com</a> ou sur Discord : <strong>aelunea_</strong></p>
     </section>
   </main>
 
   <footer>
-    © 2025 Aelune aka 00h55 🌙
+    © 2025 Aelune alias 00h55 🌙
   </footer>
 </body>
 </html>
