@@ -4,68 +4,128 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Aelune — 00h55</title>
-  <link rel="shortcut icon" href="image.png" type="image/x-icon" /> 
+  <link rel="shortcut icon" href="image.png" type="image/x-icon" />
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .lang-switch {
+      position: fixed;
+      top: 10px;
+      right: 15px;
+      padding: 5px 10px;
+      background: #333;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      z-index: 1000;
+    }
+  </style>
 </head>
 <body>
+  <button class="lang-switch" onclick="toggleLanguage()">EN</button>
+
   <nav>
     <ul>
-      <li><a href="#about">À propos</a></li>
-      <li><a href="#projects">Projets</a></li>
-      <li><a href="#shop">Boutique</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="#support">Support</a></li>
+      <li><a href="#about" data-fr="À propos" data-en="About">À propos</a></li>
+      <li><a href="#projects" data-fr="Projets" data-en="Projects">Projets</a></li>
+      <li><a href="#shop" data-fr="Boutique" data-en="Shop">Boutique</a></li>
+      <li><a href="#contact" data-fr="Contact" data-en="Contact">Contact</a></li>
+      <li><a href="#support" data-fr="Support" data-en="Support">Support</a></li>
     </ul>
   </nav>
 
   <header>
-    <h1>Aelune</h1>
-    <h2>alias 00h55</h2>
+    <h1 class="translatable" data-fr="Aelune" data-en="Aelune">Aelune</h1>
+    <h2 class="translatable" data-fr="alias 00h55" data-en="aka 00h55">alias 00h55</h2>
   </header>
+  
 
   <main>
     <section id="about">
-      <div class="section-title">À propos</div>
-      <p>Je suis Aelune, également connu sous le nom de 00h55. Passionné par la création numérique, le développement web et l'univers artistique nocturne. Mon style est minimaliste, sombre et empreint de sens cachés.</p>
+      <div class="section-title" data-fr="À propos" data-en="About">À propos</div>
+      <p class="translatable" data-fr="Je suis Aelune, également connu sous le nom de 00h55. Passionné par la création numérique, le développement web et l'univers artistique nocturne. Mon style est minimaliste, sombre et empreint de sens cachés." data-en="I'm Aelune, also known as 00h55. Passionate about digital creation, web development, and the nocturnal artistic world. My style is minimalist, dark, and filled with hidden meanings.">
+        Je suis Aelune, également connu sous le nom de 00h55. Passionné par la création numérique, le développement web et l'univers artistique nocturne. Mon style est minimaliste, sombre et empreint de sens cachés.
+      </p>
     </section>
 
     <section id="projects">
-      <div class="section-title">Projets</div>
-      <p>
-        • <strong class="KIB">Kiyomi Bot</strong> — Bot Discord multifonction privé <a href="https://discord.gg/kYUfE9scKA">Coconut 🥥</a><br />
-        • <strong class="TKB">2KBOT</strong> — Bot Discord multifonction privé <a href="https://discord.gg/XUcgqA4ZFz">2K Server</a><br/>
-        • <strong class="ANH">Ame no Hana</strong> — Bot Discord multifonction privé<br/>
-        • <strong class="LVL">Leveling</strong> — Bot Discord centré sur le système de niveau <a href="https://discord.com/oauth2/authorize?client_id=1369636711256166420">Installation</a>
+      <div class="section-title" data-fr="Projets" data-en="Projects">Projets</div>
+      <p class="translatable" data-fr="• Kiyomi Bot — Bot Discord multifonction privé <a href=&quot;https://discord.gg/Qsua3msPTT&quot;>Coconut 🥥</a><br />• 2KBOT — Bot Discord multifonction privé <a href=&quot;https://discord.gg/XUcgqA4ZFz&quot;>2K Server</a><br/>• Ame no Hana — Bot Discord multifonction public En développement<br/>• Leveling — Bot Discord centré sur le système de niveau <a href=&quot;https://discord.com/oauth2/authorize?client_id=1369636711256166420&quot;>Installation</a>"
+         data-en="• Kiyomi Bot — Private multifunction Discord bot <a href=&quot;https://discord.gg/Qsua3msPTT&quot;>Coconut 🥥</a><br />• 2KBOT — Private multifunction Discord bot <a href=&quot;https://discord.gg/XUcgqA4ZFz&quot;>2K Server</a><br/>• Ame no Hana — Public multifunction Discord bot In development<br/>• Leveling — Discord bot focused on leveling system <a href=&quot;https://discord.com/oauth2/authorize?client_id=1369636711256166420&quot;>Install</a>">
+        • Kiyomi Bot — Bot Discord multifonction privé <a href="https://discord.gg/Qsua3msPTT">Coconut 🥥</a><br />
+        • 2KBOT — Bot Discord multifonction privé  <a href="https://discord.gg/XUcgqA4ZFz">2K Server</a><br/>
+        • Ame no Hana — Bot Discord multifonction public En développement<br/>
+        • Leveling — Bot Discord centré sur le système de niveau <a href="https://discord.com/oauth2/authorize?client_id=1369636711256166420">Installation</a>
       </p>
     </section>
 
     <section id="shop">
-      <div class="section-title">Boutique</div>
+      <div class="section-title" data-fr="Boutique" data-en="Shop">Boutique</div>
       <div class="product">
         <img src="carte.png" alt="Carte de commande" />
-        <p><strong>Pour toute commande, passe par le lien Google Forme en-dessous !</strong><br />
+        <p class="translatable"
+           data-fr="<strong>Pour toute commande, passe par le lien Google Forme en-dessous !</strong><br /><a href='https://forms.gle/V9HJbu9CbkdjY1UEA'>Lien Google Forme</a>"
+           data-en="<strong>For any order, use the Google Form link below!</strong><br /><a href='https://forms.gle/V9HJbu9CbkdjY1UEA'>Google Form Link</a>">
+          <strong>Pour toute commande, passe par le lien Google Forme en-dessous !</strong><br />
           <a href="https://forms.gle/V9HJbu9CbkdjY1UEA">Lien Google Forme</a>
         </p>
       </div>
     </section>
 
-    
-
     <section id="support">
-      <div class="section-title">Support</div>
-      <!-- <p>(en créations)Si tu souhaites soutenir mon travail, tu peux le faire via <a href="https://ko-fi.com/aelune">Ko-fi</a>. Chaque contribution m'aide à continuer mes projets et à créer du contenu de qualité.</p> -->
-      
-      <p>Pour le support développement <a href="https://discord.gg/4ER8kTEGqD">00h55 - Support</a></p>
+      <div class="section-title" data-fr="Support" data-en="Support">Support</div>
+      <p class="translatable" data-fr="Pour le support développement <a href='https://discord.gg/4ER8kTEGqD'>00h55 - Support</a>"
+         data-en="For development support <a href='https://discord.gg/4ER8kTEGqD'>00h55 - Support</a>">
+         Pour le support développement <a href="https://discord.gg/4ER8kTEGqD">00h55 - Support</a>
+      </p>
     </section>
 
     <section id="contact">
-      <div class="section-title">Contact</div>
-      <p>Tu peux me contacter par mail à <a href="mailto:aelunea.dev@gmail.com">aelunea.dev@gmail.com</a> ou sur Discord : <strong>aelunea_</strong></p>
+      <div class="section-title" data-fr="Contact" data-en="Contact">Contact</div>
+      <p class="translatable" data-fr="Tu peux me contacter par mail à <a href='mailto:aelunea.dev@gmail.com'>aelunea.dev@gmail.com</a> ou sur Discord : <strong>aelunea_</strong>"
+         data-en="You can contact me via email at <a href='mailto:aelunea.dev@gmail.com'>aelunea.dev@gmail.com</a> or on Discord: <strong>aelunea_</strong>">
+         Tu peux me contacter par mail à <a href="mailto:aelunea.dev@gmail.com">aelunea.dev@gmail.com</a> ou sur Discord : <strong>aelunea_</strong>
+      </p>
     </section>
   </main>
 
-  <footer>
+  <footer class="translatable" data-fr="© 2025 Aelune alias 00h55 🌙" data-en="© 2025 Aelune aka 00h55 🌙">
     © 2025 Aelune alias 00h55 🌙
   </footer>
+
+  <script>
+    let currentLang = navigator.language || navigator.userLanguage; // Détecter la langue du navigateur
+    currentLang = currentLang.startsWith("fr") ? "fr" : "en"; // Si la langue commence par "fr", alors c'est le français, sinon c'est l'anglais
+    
+    document.querySelector(".lang-switch").textContent = currentLang === "fr" ? "EN" : "FR";
+  
+    function toggleLanguage() {
+      currentLang = currentLang === "fr" ? "en" : "fr";
+      document.querySelector(".lang-switch").textContent = currentLang === "fr" ? "EN" : "FR";
+  
+      document.querySelectorAll("[data-fr]").forEach(el => {
+        const value = el.getAttribute("data-" + currentLang);
+        if (value) {
+          if (el.tagName === "A" && el.closest("nav")) {
+            el.textContent = value;
+          } else {
+            el.innerHTML = value;
+          }
+        }
+      });
+    }
+  
+    // Applique automatiquement la langue dès le chargement de la page
+    document.querySelectorAll("[data-fr]").forEach(el => {
+      const value = el.getAttribute("data-" + currentLang);
+      if (value) {
+        if (el.tagName === "A" && el.closest("nav")) {
+          el.textContent = value;
+        } else {
+          el.innerHTML = value;
+        }
+      }
+    });
+  </script>
 </body>
 </html>
